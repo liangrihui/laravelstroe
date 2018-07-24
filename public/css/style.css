@@ -1,0 +1,158 @@
+body {
+  background: #222;
+  color: white;
+}
+
+#container {
+  box-shadow: inset 0 1px 0 #444, 0 -1px 0 #000;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+
+}
+
+canvas#waterfall {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 55%;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+
+
+h1 {
+  color: #0af;
+  font-size: 30vw;
+}
+/*去掉下划线*/
+a{
+  text-decoration:none;
+}
+
+canvas#surface {
+  -webkit-animation: fade-in 3000ms forwards;
+          animation: fade-in 3000ms forwards;
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav-center{
+  margin-top: 100px;
+  position:relative;
+}
+
+.first_neon {
+  position: absolute;
+  left: 30%;
+  /*border: 1px solid;*/
+  /*border-radius: 90px;*/
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
+  transition: text-shadow 0.5s ease 0s;
+  padding: 45px 0;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing:5px;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FF00DE, 0 0 70px #FF00DE, 0 0 80px #FF00DE, 0 0 100px #FF00DE;
+
+  width: 250px;
+}
+
+.first_neon:hover {
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF;
+
+}
+
+.second_neon {
+  position: absolute;
+  left:10%;
+  /*border: 1px solid;*/
+  /*border-radius: 90px;*/
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
+  transition: text-shadow 0.5s ease 0s;
+  padding: 45px 0;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing:5px;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #B952FF, 0 0 70px #B952FF, 0 0 80px #B952FF, 0 0 100px #B952FF;
+  width: 250px;
+}
+.second_neon:hover {
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FFFF00, 0 0 70px #FFFF00, 0 0 80px #FFFF00, 0 0 100px #FFFF00;
+}
+.third_neon {
+  position: absolute;
+  left:70%;
+  /*border: 1px solid;*/
+  /*border-radius: 90px;*/
+  color: #FFFFFF;
+  font-size: 30px;
+  display: inline-block;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  margin-left: 20px;
+  transition: text-shadow 0.5s ease 0s;
+  padding: 45px 0;
+  letter-spacing:5px;
+  text-align: center;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF;
+  width: 250px;
+}
+
+.third_neon:hover {
+  text-shadow: 0 0 6px #FFFFFF, 0 0 15px #FFFFFF, 0 0 25px #FFFFFF, 0 0 40px #7FFF00, 0 0 70px #7FFF00, 0 0 80px #7FFF00, 0 0 100px #7FFF00;
+}
+
+.forth_neon {
+  position: absolute;
+  left:50%;
+  /*border: 1px solid;*/
+  /*border-radius: 10px;*/
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
+  transition: text-shadow 0.5s ease 0s;
+  padding: 45px 0;
+  text-align: center;
+  letter-spacing:5px;
+  font-size: 30px;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #008000, 0 0 70px #008000, 0 0 80px #008000, 0 0 100px #008000;
+  width: 250px;
+}
+.forth_neon:hover {
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FFFF00, 0 0 70px #FFFF00, 0 0 80px #FFFF00, 0 0 100px #FFFF00;
+}
