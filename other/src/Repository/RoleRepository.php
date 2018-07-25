@@ -18,6 +18,19 @@ class RoleRepository implements RoleRepositoryInterface
         return $role->save();
     }
 
+    public function addUserRole($user,$role)
+    {
+        //// 从指定用户中移除角色...
+        //   $user->roles()->detach($roleId);
+
+        // 从指定用户移除所有角色...
+        //   $user->roles()->detach();
+        //更新
+        //$user->roles()->updateExistingPivot($roleId, $attributes);
+        //$user->roles()->attach($roleId);
+        return $user->roles()->save($role);
+    }
+
     public function remove(){
 
     }

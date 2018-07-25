@@ -15,6 +15,8 @@ interface RoleRepositoryInterface
 
     public function add($name);
 
+    public function addUserRole($user, $role);
+
     public function remove();
 
     public function check();
